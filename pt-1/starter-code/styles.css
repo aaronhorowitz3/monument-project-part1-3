@@ -1,46 +1,80 @@
+header {
+  background:   #000000 url(images/blog_header_bg.jpg) 100% 100% no-repeat;
+  height: 400px;
+}
+
+body {
+  position: absolute;
+}
+
+#sticky {
+  position: fixed;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: white;
+  width: 100%;
+  margin-top: -10px;
+}
+
 nav {
   text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 nav a {
   text-decoration: none;
   display: inline-block;
-  margin-left: .2em;
-  margin-right: .2em;
+  margin-left: 4em;
+  margin-right: 4em;
   color: #47545D;
+  letter-spacing: .1em;
 }
+
+
 
 h1 {
   text-align: center;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
   letter-spacing: .3em;
-  color: #47545D;
+  color: white;
+  padding-top: 170px;
+}
+
+
+main {
+  margin-left: 3em;
+  margin-right: 3em;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#flexItem1 {
+  flex-basis: 58%;
+}
+
+#flexItem2 {
+  flex-basis: 28%;
 }
 
 img {
   max-width: 100%;
-  margin-left: 3em;
-  margin-right: 3em;
 }
 
 p {
-  font-family: "Raleway", sans-serif;
-  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   max-width: 100%;
-  margin-left: 3em;
-  margin-right: 3em;
 }
 
 h2, h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  font-weight: 800;
-  margin-left: 3em;
+  font-weight: 600;
   color: #47545D;
 }
 
@@ -48,20 +82,24 @@ ul {
   margin-left: 3em;
 }
 
+li {
+  margin-bottom: .75em;
+}
+
 li a {
   text-decoration: none;
   font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   color: #47545D;
 }
 
 footer {
   background-color: #D4F2F5;
-  margin-left: 0;
-  margin-right: 0;
   text-align: center;
   padding-bottom: .5em;
+  padding-right: -10em;
   color: #47545D;
+  margin-top: 3em;
 }
 
 footer a {
@@ -71,4 +109,55 @@ footer a {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   color: #47545D;
+}
+
+footer nav a {
+  margin-top: 10px;
+  font-size: 25px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+footer nav {
+  padding-bottom: 3em;
+  padding-top: 2em;
+}
+
+input {
+  width: 25em;
+  height: 43.99px;
+  border: none;
+  margin-right: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+input::placeholder {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 4em;
+  background-color: transparent;
+  border: 2px solid #47545D;
+  margin-left: 2em;
+  transition: 1s all ease-in-out;
+  width: 20em;
+}
+
+button:hover {
+  color: white;
+  background-color: #47545D;
+}
+
+footer p {
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 2px solid #47545D;
+  padding-top: 1em;
 }
