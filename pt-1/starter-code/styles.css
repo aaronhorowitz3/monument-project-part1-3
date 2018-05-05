@@ -1,6 +1,7 @@
 header {
-  background:   #000000 url(images/blog_header_bg.jpg) 100% 100% no-repeat;
+  background:   #000000 url(images/blog_header_bg.jpg) 50% 50%;
   height: 400px;
+  margin-bottom: 30px;
 }
 
 body {
@@ -30,9 +31,12 @@ nav a {
   margin-right: 4em;
   color: #47545D;
   letter-spacing: .1em;
+  transition: .5s all ease-in-out;
 }
 
-
+nav a:hover {
+  color: #5A9AA8;
+}
 
 h1 {
   text-align: center;
@@ -91,6 +95,28 @@ li a {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #47545D;
+  transition: .5s all ease-in-out;
+}
+
+li a:hover {
+  color: #5A9AA8;
+}
+
+article {
+  text-align: center;
+  margin-top: 4em;
+}
+
+form textarea {
+  display: block;
+  margin: 0 auto;
+}
+
+form buttom {
+  display: block;
+}
+form section input, form textarea, form button {
+  border: 2px solid #47545D;
 }
 
 footer {
@@ -123,22 +149,22 @@ footer nav {
   padding-top: 2em;
 }
 
-input {
+footer input {
   width: 25em;
-  height: 43.99px;
+  height: 40.99px;
   border: none;
   margin-right: 2em;
   text-transform: uppercase;
   text-align: center;
 }
 
-input::placeholder {
+footer input::placeholder {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 
 }
 
-button {
+footer button {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -146,16 +172,20 @@ button {
   background-color: transparent;
   border: 2px solid #47545D;
   margin-left: 2em;
-  transition: 1s all ease-in-out;
+  transition: .2s all ease-in-out;
   width: 20em;
 }
 
-button:hover {
+footer button:hover {
   color: white;
   background-color: #47545D;
 }
 
-footer p {
+footer button p {
+  margin: auto auto;
+}
+
+#copyright {
   margin-left: auto;
   margin-right: auto;
   border-top: 2px solid #47545D;
