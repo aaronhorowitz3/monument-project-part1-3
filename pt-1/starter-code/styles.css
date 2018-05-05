@@ -1,7 +1,7 @@
 header {
   background:   #000000 url(images/blog_header_bg.jpg) 50% 50%;
-  height: 400px;
-  margin-bottom: 30px;
+  height: 25em;
+  margin-bottom: 2em;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   padding-bottom: 1em;
   background-color: white;
   width: 100%;
-  margin-top: -10px;
+  margin-top: -.625em;
 }
 
 nav {
@@ -36,6 +36,7 @@ nav a {
 
 nav a:hover {
   color: #5A9AA8;
+  cursor: pointer;
 }
 
 h1 {
@@ -45,7 +46,7 @@ h1 {
   font-weight: 600;
   letter-spacing: .3em;
   color: white;
-  padding-top: 170px;
+  padding-top: 6.25em;
 }
 
 
@@ -100,6 +101,7 @@ li a {
 
 li a:hover {
   color: #5A9AA8;
+  cursor: pointer;
 }
 
 article {
@@ -107,16 +109,52 @@ article {
   margin-top: 4em;
 }
 
-form textarea {
-  display: block;
-  margin: 0 auto;
+.comment {
+  max-width: 100%;
 }
 
-form buttom {
-  display: block;
+form section {
+  display: flex;
+  justify-content: center;
 }
+
+form aside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+form section input {
+  flex-basis: 40%;
+  margin: 1em;
+  padding: 1em;
+}
+
+form textarea, form button {
+  margin: 1em;
+  padding: 1em;
+}
+
+form textarea {
+  width: 84%;
+}
+
+form button {
+  transition: .2s all ease-in-out;
+  text-transform: uppercase;
+  width: 86%;
+}
+
 form section input, form textarea, form button {
   border: 2px solid #47545D;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #47545D;
 }
 
 footer {
@@ -138,8 +176,8 @@ footer a {
 }
 
 footer nav a {
-  margin-top: 10px;
-  font-size: 25px;
+  margin-top: .675em;
+  font-size: 1.563em;
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -151,7 +189,7 @@ footer nav {
 
 footer input {
   width: 25em;
-  height: 40.99px;
+  height: 2.562em;
   border: none;
   margin-right: 2em;
   text-transform: uppercase;
@@ -168,7 +206,8 @@ footer button {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  height: 4em;
+  width: 25em;
+  height: 2.562em;
   background-color: transparent;
   border: 2px solid #47545D;
   margin-left: 2em;
@@ -179,6 +218,7 @@ footer button {
 footer button:hover {
   color: white;
   background-color: #47545D;
+  cursor: pointer;
 }
 
 footer button p {
@@ -190,4 +230,30 @@ footer button p {
   margin-right: auto;
   border-top: 2px solid #47545D;
   padding-top: 1em;
+  margin-top: 3em;
+}
+
+
+/* 806 px wide */
+
+@media screen and (max-width: 806px) {
+
+main {
+  display: block;
+}
+
+#flexItem2 {
+  display: none;
+}
+
+form aside, aside textarea, aside button {
+  display: block;
+  width: 90%;
+  margin: 1em auto;
+}
+
+form section input {
+  max-width: 100%;
+  margin: 1em auto;
+}
 }
