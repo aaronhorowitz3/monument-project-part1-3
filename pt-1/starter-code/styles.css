@@ -8,6 +8,7 @@ header {
 body {
   position: absolute;
   box-sizing: border-box;
+  clear: none;
 }
 
 #sticky {
@@ -41,6 +42,18 @@ nav a:hover {
   cursor: pointer;
 }
 
+/* .burger {
+  display: flex;
+}
+
+.fas {
+  z-index: 10;
+  align-self: right;
+  height: 2em;
+  position: absolute;
+/* display: none; */
+
+
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -48,8 +61,7 @@ h1 {
   font-weight: 600;
   letter-spacing: .3em;
   color: white;
-  padding-top: 6.25em;
-  padding-bottom
+  padding-top: 6em;
 }
 
 
@@ -118,6 +130,7 @@ form {
   flex-wrap: wrap;
   margin-left: 5em;
   margin-right: 5em;
+  justify-content: space-between;
 }
 
 form button, form input, form textarea {
@@ -152,11 +165,6 @@ textarea {
   margin-top: 1em;
   padding: 10px 10px;
   height: 8em;
-}
-
-
-.gap {
-  margin-right: 1em;
 }
 
 footer {
@@ -233,4 +241,21 @@ footer button p {
   border-top: 2px solid #47545D;
   padding-top: 1em;
   margin-top: 3em;
+}
+
+@media screen and (max-width: 1272px) {
+  #flexItem2 {
+    display: none;
+  }
+
+  form input, form textarea, form button {
+    display: block;
+    width: 80%;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form input {
+    margin-top: 1em;
+  }
 }
