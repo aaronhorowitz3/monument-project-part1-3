@@ -42,16 +42,10 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* .burger {
-  display: flex;
-}
-
 .fas {
-  z-index: 10;
-  align-self: right;
-  height: 2em;
-  position: absolute;
-/* display: none; */
+  text-decoration: none;
+  display: none;
+}
 
 
 h1 {
@@ -257,5 +251,16 @@ footer button p {
   }
   form input {
     margin-top: 1em;
+  }
+}
+
+@media screen and (max-width: 806px) {
+  #sticky {
+    display: none;
+  }
+
+  .fas {
+    text-decoration: none;
+    display: block;
   }
 }
